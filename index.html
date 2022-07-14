@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Pajak</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -11,8 +17,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
   </head>
+
   <body>
     <div class="container">
       <div class="row mt-3 p-2">
@@ -23,11 +29,9 @@
                 class="form-control"
                 name="tipe"
                 data-style="btn-cus"
-                id="tipe"
+                id="jenis"
               >
                 <option value="">Tipe Kendaraan</option>
-                <option value="SEDAN">MOBIL</option>
-                <option value="SEPEDA MOTOR">SEPEDA MOTOR</option>
               </select>
             </div>
             <div class="form-group">
@@ -35,47 +39,51 @@
                 class="form-control"
                 name="merk"
                 data-style="btn-cus"
-                id="lol"
+                id="merek"
               >
-                <option value="">Merk Kendaraan</option>
+                <option value="">Merek</option>
               </select>
             </div>
             <div class="form-group">
               <select
                 class="form-control"
-                name="tahun"
+                name="merk"
                 data-style="btn-cus"
-                id="tahun"
+                id="varian"
               >
-                <option value="">Warna Kendaraan</option>
+                <option value="">Kendaraan</option>
               </select>
             </div>
             <div class="form-group">
               <select
                 class="form-control"
-                name="model"
+                name="warna"
                 data-style="btn-cus"
-                id="model"
+                id="warna"
               >
-                <option value="">Model Kendaraan</option>
+                <option value="">Warna</option>
               </select>
             </div>
 
             <p id="pool" style="color: red"></p>
-            <button class="btn btn-cus float-right" id="bya">Cek Pajak</button>
-
-            <button class="btn btn-danger float-right mr-1">Reset</button>
+            <button class="btn btn-cus float-right" id="btn-cek-pajak">
+              Cek Pajak
+            </button>
+            <button class="btn btn-danger float-right mr-1" type="reset">
+              Reset
+            </button>
           </form>
         </div>
 
-        <div class="col-md-6" id="output"></div>
+        <div class="col-md-6 mt-4" id="out"></div>
       </div>
     </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"
-  ></script>
-  <script src="script.js"></script>
 </html>
