@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-3 p-2">
+        <div class="col-md-6">
+          <form action="" method="post" accept-charset="utf-8">
+            <div class="form-group">
+              <select
+                class="form-control"
+                name="tipe"
+                data-style="btn-cus"
+                id="tipe"
+              >
+                <option value="">Tipe Kendaraan</option>
+                <option value="SEDAN">MOBIL</option>
+                <option value="SEPEDA MOTOR">SEPEDA MOTOR</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select
+                class="form-control"
+                name="merk"
+                data-style="btn-cus"
+                id="lol"
+              >
+                <option value="">Merk Kendaraan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select
+                class="form-control"
+                name="tahun"
+                data-style="btn-cus"
+                id="tahun"
+              >
+                <option value="">Warna Kendaraan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select
+                class="form-control"
+                name="model"
+                data-style="btn-cus"
+                id="model"
+              >
+                <option value="">Model Kendaraan</option>
+              </select>
+            </div>
+
+            <p id="pool" style="color: red"></p>
+            <button class="btn btn-cus float-right" id="bya">Cek Pajak</button>
+
+            <button class="btn btn-danger float-right mr-1">Reset</button>
+          </form>
+        </div>
+
+        <div class="col-md-6" id="output"></div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</html>

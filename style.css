@@ -1,0 +1,52 @@
+.bg {
+  background-color: #bfdbf7;
+}
+
+button.btn-cus:hover {
+  background-color: #1f7a8c;
+  color: #fff;
+}
+
+button.btn-cus {
+  border-color: #1f7a8c;
+}
+
+.btn-cus {
+  background-color: #f2f2f2;
+}
+
+ul {
+  list-style-type: none;
+  position: relative;
+  margin-top: -30px;
+}
+
+li {
+  letter-spacing: 1px;
+}
+
+.form-control {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.lolopada {
+  margin-left: 85px;
+}
+
+.container {
+  padding-left: -50px;
+  padding-right: -50px;
+}
+
+@media only screen and (max-width: 767px) {
+  #out {
+    margin-top: 10px;
+  }
+
+  .lolopada {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+  }
+}
