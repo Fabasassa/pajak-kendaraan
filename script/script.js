@@ -184,7 +184,7 @@ const calcADMSTNK = (jenis) => (jenis === "motor" ? 100000 : 200000)
 
 const calcADMTNKB = (jenis) => (jenis === "motor" ? 60000 : 100000)
 
-const calcBiroJasa = (total) => (total * 10) / 100
+const calcBiroJasa = (harga) => (harga * 10) / 100
 
 const calcTotalPajak = (jenis, harga, mesin = 0) => {
     output.pkb = calcPKB(harga)
@@ -192,7 +192,7 @@ const calcTotalPajak = (jenis, harga, mesin = 0) => {
     output.swdkllj = calcSWDKLLJ(jenis, mesin)
     output.admstnk = calcADMSTNK(jenis)
     output.admtnkb = calcADMTNKB(jenis)
-    output.birojasa = calcBiroJasa(total)
+    output.birojasa = calcBiroJasa(harga)
 
     let { pkb, bbnkb, swdkllj, admstnk, admtnkb, birojasa } = output
     output.total = (pkb + bbnkb + swdkllj + admstnk + admtnkb)
