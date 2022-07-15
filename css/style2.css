@@ -1,0 +1,141 @@
+.bg {
+    background-color: #bfdbf7;
+}
+
+button.btn-cus:hover {
+    background-color: #1f7a8c;
+    color: #fff;
+}
+
+button.btn-cus {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn-cus {
+    background-color: #f2f2f2;
+}
+
+button.btn-res {
+    background-color: rgb(255, 0, 0);
+    color: rgb(2, 0, 0);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn-res {
+    background-color: #fc0303;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+    margin-top: -30px;
+}
+
+li {
+    letter-spacing: 1px;
+}
+
+.form-control {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.lolopada {
+    margin-left: 85px;
+}
+
+.container {
+    padding-left: -50px;
+    padding-right: -50px;
+}
+
+@media only screen and (max-width: 767px) {
+    #out {
+        margin-top: 10px;
+    }
+    .lolopada {
+        position: relative;
+        margin: 0px;
+        width: 100%;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap");
+:root {
+    --lg-font: "Kaisei Tokumin", serif;
+    --sm-font: "Poppins", sans-serif;
+    --green: #01fb33;
+}
+
+body {
+    font-family: var(--sm-font);
+}
+
+
+/* navbar */
+
+.navbar {
+    -webkit-box-shadow: 0 3px 9px 3px #01fb33;
+    box-shadow: 0 3px 9px 3px #01fb33;
+}
+
+.navbar-brand img {
+    align-items: center;
+    width: 50px;
+}
+
+.navbar-brand span {
+    align-items: center;
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+    font-size: xx-large;
+}
+
+.nav-link:hover {
+    color: var(--green) !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar-collapse {
+    width: auto;
+    flex-grow: 0;
+}
+
+
+/* title */
+
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--green);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+/* footer */
+
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+footer a {
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
